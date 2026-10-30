@@ -186,12 +186,15 @@ async def wa_verify(request: Request):
 @app.post("/webhook")
 async def wa_receive(request: Request, bg: BackgroundTasks):
     data = await request.json()
-    print("[WA] webhook masuk:", json.dumps(data)[:300], flush=True)
+    print("[WA] webhook masuk:", json.dumps(data)[:200], flush=True)
     now = time.time()
     for k in [k for k, t in _seen_wa_ids.items() if now - t > 3600]:
         _seen_wa_ids.pop(k, None)
     for entry in data.get("entry", []):
         for change in entry.get("changes", []):
+            for st in change.get("value", {}).get("statuses", []) or []:
+                print(f"[WA] status pesan: {st.get('status')} ke ...{str(st.get('recipient_id', ''))[-4:]}"
+                      f" errors={json.dumps(st.get('errors', []), ensure_ascii=False)}", flush=True)
             for m in change.get("value", {}).get("messages", []) or []:
                 mid, sender = m.get("id"), m.get("from")
                 if not sender or mid in _seen_wa_ids:      # Meta bisa mengirim ulang pesan yang sama
