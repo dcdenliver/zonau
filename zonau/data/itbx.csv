@@ -1,0 +1,105 @@
+kode_zona,kegiatan,alias,kbli,status,syarat,pasal_sumber
+DMY-R,Laundry,binatu;laundry kiloan;cuci baju;cuci setrika,-,T,[DUMMY] Contoh: luas lantai usaha dibatasi; ganti dengan ketentuan resmi,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-R,Warung Makan,rumah makan;warteg;warung nasi;warung,-,T,"[DUMMY] Contoh: skala kecil, melayani lingkungan sekitar",[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-R,Kafe,coffee shop;kedai kopi;cafe;jualan kopi,-,B,[DUMMY] Contoh: wajib menyediakan parkir dan tidak mengganggu lingkungan,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-R,Bengkel Motor,bengkel;servis motor;tambal ban,-,X,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-R,Salon,salon kecantikan;barbershop;pangkas rambut,-,T,[DUMMY] Contoh: skala rumahan,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-R,Toko Kelontong,warung sembako;toko sembako;kelontong,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-K,Laundry,binatu;laundry kiloan;cuci baju;cuci setrika,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-K,Warung Makan,rumah makan;warteg;warung nasi;warung,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-K,Kafe,coffee shop;kedai kopi;cafe;jualan kopi,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-K,Bengkel Motor,bengkel;servis motor;tambal ban,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-K,Salon,salon kecantikan;barbershop;pangkas rambut,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-K,Toko Kelontong,warung sembako;toko sembako;kelontong,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-C,Laundry,binatu;laundry kiloan;cuci baju;cuci setrika,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-C,Warung Makan,rumah makan;warteg;warung nasi;warung,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-C,Kafe,coffee shop;kedai kopi;cafe;jualan kopi,-,T,[DUMMY] Contoh: jam operasional dibatasi,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-C,Bengkel Motor,bengkel;servis motor;tambal ban,-,B,[DUMMY] Contoh: wajib pengelolaan limbah oli,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-C,Salon,salon kecantikan;barbershop;pangkas rambut,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-C,Toko Kelontong,warung sembako;toko sembako;kelontong,-,I,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-H,Laundry,binatu;laundry kiloan;cuci baju;cuci setrika,-,X,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-H,Warung Makan,rumah makan;warteg;warung nasi;warung,-,X,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-H,Kafe,coffee shop;kedai kopi;cafe;jualan kopi,-,X,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-H,Bengkel Motor,bengkel;servis motor;tambal ban,-,X,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-H,Salon,salon kecantikan;barbershop;pangkas rambut,-,X,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+DMY-H,Toko Kelontong,warung sembako;toko sembako;kelontong,-,X,-,[DUMMY] Lampiran Pergub 31/2022 - isi nomor lampiran
+R-1,Binatu/ Laundry,laundry;laundry kiloan;binatu;cuci baju;cuci setrika;jasa setrika,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Warung Makan,warung makan;warteg;warung nasi;rumah makan kecil;warung padang,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Toko Eceran Makanan/Bahan Makanan dan Minuman,toko kelontong;warung sembako;toko sembako;kelontong;toko makanan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Sektor Usaha Informal Makanan dan Minuman,pedagang kaki lima;pkl;gerobak makanan;jualan makanan keliling,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Kafe/ Kedai Minuman,kafe;cafe;coffee shop;kedai kopi;jualan kopi;kedai minuman;warkop,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Restoran,restoran;resto,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Bengkel,bengkel;bengkel motor;bengkel mobil;servis motor;servis mobil;tambal ban,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Bangunan Pencucian dan Salon Kendaraan Bermotor,cuci motor;cuci mobil;car wash;salon mobil;doorsmeer,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Minimarket,minimarket;mini market,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Apotek,apotek;apotik;toko obat,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Kedai Obat Tradisional/ Jamu,jamu;toko jamu;kedai jamu;obat herbal,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Guest House/Rumah Kos,kos;kosan;kos kosan;rumah kos;guest house;kontrakan kamar,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Bangunan Katering,katering;catering;katering rumahan,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Toko Eceran Selain Makanan dan Minuman,toko baju;toko pakaian;konter hp;toko hp;konter pulsa;toko aksesoris,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Pendidikan Pelatihan / Kursus,kursus;bimbel;bimbingan belajar;les;tempat les,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Warung Internet dan Warung Telekomunikasi,warnet;warung internet;wartel,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,"Praktek Dokter (Umum, Gigi, Spesialis) / Bidan",praktek dokter;praktik dokter;dokter gigi;bidan;praktek bidan,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Bangunan Penitipan Hewan (Pet Shop),pet shop;petshop;penitipan hewan;toko hewan,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona R-1"
+R-1,Hotel,hotel,-,X,-,Tidak tercantum di daftar I/T/B subzona R-1 (Smart RDTR) - verifikasi via tab Kegiatan
+R-1,Pergudangan dan Penyimpanan Tertutup,gudang;pergudangan;tempat penyimpanan barang,-,X,-,Tidak tercantum di daftar I/T/B subzona R-1 (Smart RDTR) - verifikasi via tab Kegiatan
+K-1,Binatu/ Laundry,laundry;laundry kiloan;binatu;cuci baju;cuci setrika;jasa setrika,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Warung Makan,warung makan;warteg;warung nasi;rumah makan kecil;warung padang,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Toko Eceran Makanan/Bahan Makanan dan Minuman,toko kelontong;warung sembako;toko sembako;kelontong;toko makanan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Sektor Usaha Informal Makanan dan Minuman,pedagang kaki lima;pkl;gerobak makanan;jualan makanan keliling,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Kafe/ Kedai Minuman,kafe;cafe;coffee shop;kedai kopi;jualan kopi;kedai minuman;warkop,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Restoran,restoran;resto,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Bengkel,bengkel;bengkel motor;bengkel mobil;servis motor;servis mobil;tambal ban,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Bangunan Pencucian dan Salon Kendaraan Bermotor,cuci motor;cuci mobil;car wash;salon mobil;doorsmeer,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Minimarket,minimarket;mini market,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Apotek,apotek;apotik;toko obat,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Kedai Obat Tradisional/ Jamu,jamu;toko jamu;kedai jamu;obat herbal,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Guest House/Rumah Kos,kos;kosan;kos kosan;rumah kos;guest house;kontrakan kamar,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Bangunan Katering,katering;catering;katering rumahan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Toko Eceran Selain Makanan dan Minuman,toko baju;toko pakaian;konter hp;toko hp;konter pulsa;toko aksesoris,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Pendidikan Pelatihan / Kursus,kursus;bimbel;bimbingan belajar;les;tempat les,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Warung Internet dan Warung Telekomunikasi,warnet;warung internet;wartel,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,"Praktek Dokter (Umum, Gigi, Spesialis) / Bidan",praktek dokter;praktik dokter;dokter gigi;bidan;praktek bidan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Bangunan Penitipan Hewan (Pet Shop),pet shop;petshop;penitipan hewan;toko hewan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Hotel,hotel,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-1,Pergudangan dan Penyimpanan Tertutup,gudang;pergudangan;tempat penyimpanan barang,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-1"
+K-2,Binatu/ Laundry,laundry;laundry kiloan;binatu;cuci baju;cuci setrika;jasa setrika,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Warung Makan,warung makan;warteg;warung nasi;rumah makan kecil;warung padang,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Toko Eceran Makanan/Bahan Makanan dan Minuman,toko kelontong;warung sembako;toko sembako;kelontong;toko makanan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Sektor Usaha Informal Makanan dan Minuman,pedagang kaki lima;pkl;gerobak makanan;jualan makanan keliling,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Kafe/ Kedai Minuman,kafe;cafe;coffee shop;kedai kopi;jualan kopi;kedai minuman;warkop,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Restoran,restoran;resto,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Bengkel,bengkel;bengkel motor;bengkel mobil;servis motor;servis mobil;tambal ban,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Bangunan Pencucian dan Salon Kendaraan Bermotor,cuci motor;cuci mobil;car wash;salon mobil;doorsmeer,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Minimarket,minimarket;mini market,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Apotek,apotek;apotik;toko obat,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Kedai Obat Tradisional/ Jamu,jamu;toko jamu;kedai jamu;obat herbal,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Guest House/Rumah Kos,kos;kosan;kos kosan;rumah kos;guest house;kontrakan kamar,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Bangunan Katering,katering;catering;katering rumahan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Toko Eceran Selain Makanan dan Minuman,toko baju;toko pakaian;konter hp;toko hp;konter pulsa;toko aksesoris,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Pendidikan Pelatihan / Kursus,kursus;bimbel;bimbingan belajar;les;tempat les,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Warung Internet dan Warung Telekomunikasi,warnet;warung internet;wartel,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,"Praktek Dokter (Umum, Gigi, Spesialis) / Bidan",praktek dokter;praktik dokter;dokter gigi;bidan;praktek bidan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Bangunan Penitipan Hewan (Pet Shop),pet shop;petshop;penitipan hewan;toko hewan,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Hotel,hotel,-,I,-,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+K-2,Pergudangan dan Penyimpanan Tertutup,gudang;pergudangan;tempat penyimpanan barang,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona K-2"
+RTH-4,Binatu/ Laundry,laundry;laundry kiloan;binatu;cuci baju;cuci setrika;jasa setrika,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,Warung Makan,warung makan;warteg;warung nasi;rumah makan kecil;warung padang,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Toko Eceran Makanan/Bahan Makanan dan Minuman,toko kelontong;warung sembako;toko sembako;kelontong;toko makanan,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Sektor Usaha Informal Makanan dan Minuman,pedagang kaki lima;pkl;gerobak makanan;jualan makanan keliling,-,T,"Terbatas: dibatasi (misalnya luas, intensitas, atau jumlah) sesuai ketentuan RDTR","Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Kafe/ Kedai Minuman,kafe;cafe;coffee shop;kedai kopi;jualan kopi;kedai minuman;warkop,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Restoran,restoran;resto,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Bengkel,bengkel;bengkel motor;bengkel mobil;servis motor;servis mobil;tambal ban,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,Bangunan Pencucian dan Salon Kendaraan Bermotor,cuci motor;cuci mobil;car wash;salon mobil;doorsmeer,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,Minimarket,minimarket;mini market,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Apotek,apotek;apotik;toko obat,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Kedai Obat Tradisional/ Jamu,jamu;toko jamu;kedai jamu;obat herbal,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Guest House/Rumah Kos,kos;kosan;kos kosan;rumah kos;guest house;kontrakan kamar,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,Bangunan Katering,katering;catering;katering rumahan,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,Toko Eceran Selain Makanan dan Minuman,toko baju;toko pakaian;konter hp;toko hp;konter pulsa;toko aksesoris,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,Pendidikan Pelatihan / Kursus,kursus;bimbel;bimbingan belajar;les;tempat les,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,Warung Internet dan Warung Telekomunikasi,warnet;warung internet;wartel,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,"Praktek Dokter (Umum, Gigi, Spesialis) / Bidan",praktek dokter;praktik dokter;dokter gigi;bidan;praktek bidan,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Bangunan Penitipan Hewan (Pet Shop),pet shop;petshop;penitipan hewan;toko hewan,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
+RTH-4,Hotel,hotel,-,B,Bersyarat: wajib memenuhi persyaratan pelaksanaan kegiatan sesuai ketentuan RDTR,"Pergub DKI 31/2022 via Smart RDTR Jakarta Satu, subzona RTH-4"
+RTH-4,Pergudangan dan Penyimpanan Tertutup,gudang;pergudangan;tempat penyimpanan barang,-,X,-,Tidak tercantum di daftar I/T/B subzona RTH-4 (Smart RDTR) - verifikasi via tab Kegiatan
