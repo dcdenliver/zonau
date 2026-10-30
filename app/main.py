@@ -156,12 +156,17 @@ def to_whatsapp(text: str) -> str:
 
 async def wa_send(to: str, text: str):
     if not (WA_TOKEN and WA_PHONE_ID):
+        print("[WA] WA_TOKEN/WA_PHONE_ID belum diisi", flush=True)
         return
     url = f"https://graph.facebook.com/{GRAPH_VERSION}/{WA_PHONE_ID}/messages"
     payload = {"messaging_product": "whatsapp", "to": to, "type": "text",
                "text": {"preview_url": True, "body": to_whatsapp(text)}}
     async with httpx.AsyncClient(timeout=30) as client:
-        await client.post(url, headers={"Authorization": f"Bearer {WA_TOKEN}"}, json=payload)
+        r = await client.post(url, headers={"Authorization": f"Bearer {WA_TOKEN}"}, json=payload)
+    if r.status_code >= 400:
+        print(f"[WA] GAGAL kirim ke {to[-4:]}: HTTP {r.status_code} {r.text[:300]}", flush=True)
+    else:
+        print(f"[WA] terkirim ke ...{to[-4:]}", flush=True)
 
 
 async def handle_wa_message(sender: str, text: str):
@@ -181,6 +186,7 @@ async def wa_verify(request: Request):
 @app.post("/webhook")
 async def wa_receive(request: Request, bg: BackgroundTasks):
     data = await request.json()
+    print("[WA] webhook masuk:", json.dumps(data)[:300], flush=True)
     now = time.time()
     for k in [k for k, t in _seen_wa_ids.items() if now - t > 3600]:
         _seen_wa_ids.pop(k, None)
