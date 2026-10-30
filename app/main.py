@@ -123,6 +123,28 @@ async def health():
     return {"ok": True, "langflow": bool(LANGFLOW_RUN_URL), "whatsapp": bool(WA_TOKEN and WA_PHONE_ID)}
 
 
+PRIVACY_HTML = """<!doctype html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Kebijakan Privasi ZONA.U</title>
+<style>body{font-family:Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 16px;line-height:1.6;color:#16232A}</style></head><body>
+<h1>Kebijakan Privasi ZONA.U</h1>
+<p>ZONA.U adalah prototipe hackathon (Hackathon Nasional Hacktiv8 × IBM SkillsBuild 2026) yang membantu pelaku UMKM mengecek kesesuaian lokasi usaha dengan RDTR DKI Jakarta.</p>
+<h2>Data yang diproses</h2>
+<ul><li>Teks pertanyaan yang Anda kirim, termasuk lokasi (alamat, koordinat, atau lokasi yang dibagikan) dan jenis usaha.</li>
+<li>Untuk WhatsApp: nomor WhatsApp pengirim, hanya untuk mengirim balasan.</li></ul>
+<h2>Penggunaan data</h2>
+<p>Data hanya dipakai untuk menjawab pertanyaan Anda. Kami tidak meminta nama, NIK, atau data pribadi lain, dan tidak menjual atau membagikan data kepada pihak ketiga selain layanan yang diperlukan untuk memproses jawaban (Langflow, penyedia model AI, OpenStreetMap Nominatim, dan WhatsApp Cloud API).</p>
+<h2>Penyimpanan dan penghapusan</h2>
+<p>Server tidak menyimpan riwayat percakapan secara permanen. Untuk meminta penghapusan data, kirim pesan "HAPUS DATA" ke nomor bot atau hubungi tim melalui repositori github.com/dcdenliver/zonau.</p>
+<h2>Batasan</h2>
+<p>Hasil ZONA.U adalah gambaran awal, bukan keputusan KKPR resmi. Keputusan resmi ada di OSS dan DPMPTSP.</p>
+</body></html>"""
+
+
+@app.get("/privasi", response_class=HTMLResponse)
+async def privasi():
+    return HTMLResponse(PRIVACY_HTML)
+
+
 # --------------------------------------------------------------------------- WhatsApp
 def to_whatsapp(text: str) -> str:
     """Markdown sederhana -> format WhatsApp."""
