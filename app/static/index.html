@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZONA.U · Cek Zona, Mulai Usaha</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16232A;--body:#46565E;--muted:#6B7A80;--bg:#F5F6F2;--card:#fff;--line:#E2E6E1;--blue:#0A99FC;--blue-d:#0670C4;--dark:#111A1E;
+--ok:#1D6B40;--okbg:#DCEFE4;--warn:#7A5200;--warnbg:#FBEBC8;--no:#9E2B20;--nobg:#F7DAD6}
+*{box-sizing:border-box}body{margin:0;font-family:'Plus Jakarta Sans',Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:var(--dark);color:#F5F6F2;padding:28px 16px 36px}
+.wrap{max-width:980px;margin:0 auto}
+.brand{font-weight:800;font-size:22px;letter-spacing:-.5px}
+.brand span{color:var(--blue)}
+h1{font-size:clamp(26px,4vw,40px);line-height:1.15;margin:18px 0 8px;letter-spacing:-1px}
+.sub{color:#BFCCD1;font-size:16px;max-width:640px;line-height:1.5;margin:0}
+main{padding:0 16px 48px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:20px;margin-top:-20px}
+label{font-weight:700;font-size:15px}
+textarea{width:100%;min-height:92px;margin-top:8px;padding:14px;border-radius:14px;border:2px solid var(--line);font:inherit;font-size:16px;resize:vertical}
+textarea:focus{outline:none;border-color:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chip{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer;color:var(--body)}
+.chip:hover{border-color:var(--blue);color:var(--blue-d)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+button.primary{background:var(--blue);color:#06233a;border:0;border-radius:12px;padding:12px 22px;font:inherit;font-weight:800;font-size:16px;cursor:pointer}
+button.primary:disabled{opacity:.6;cursor:wait}
+button.ghost{background:transparent;border:2px solid var(--line);border-radius:12px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;color:var(--ink)}
+.hint{font-size:13px;color:var(--muted)}
+#hasil{display:none;margin-top:20px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+.answer{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:20px;line-height:1.6;font-size:15px;white-space:normal;overflow-wrap:anywhere}
+.answer a{color:var(--blue-d)}
+.status{display:inline-block;font-weight:800;padding:6px 14px;border-radius:999px;margin-bottom:10px}
+.s-ok{background:var(--okbg);color:var(--ok)}.s-warn{background:var(--warnbg);color:var(--warn)}.s-no{background:var(--nobg);color:var(--no)}
+iframe{width:100%;height:460px;border:2px solid var(--line);border-radius:20px;background:#e9ece8}
+.loading{display:none;margin-top:16px;color:var(--body)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+@media(max-width:700px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:2px solid var(--line);border-radius:16px;padding:14px;font-size:14px;color:var(--body)}
+.step b{display:block;color:var(--ink);margin-bottom:4px}
+footer{color:var(--muted);font-size:13px;line-height:1.5;padding:0 16px 32px}
+@media print{header,.card,.steps,.no-print,footer .no-print{display:none!important}#hasil{display:block!important}.grid{grid-template-columns:1fr}iframe{height:380px}body{background:#fff}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">ZONA<span>.U</span></div>
+  <h1>Boleh buka usaha di lokasi ini?</h1>
+  <p class="sub">Cek kesesuaian lokasi usaha dengan RDTR DKI Jakarta sebelum menyewa tempat. Tulis lokasi dan jenis usaha dalam satu kalimat.</p>
+</div></header>
+<main><div class="wrap">
+  <div class="card">
+    <label for="pesan">Lokasi + jenis usaha</label>
+    <textarea id="pesan" placeholder="Contoh: Saya mau buka laundry kiloan di -6.198626, 106.806155, boleh?"></textarea>
+    <div class="chips">
+      <button class="chip" data-q="Saya mau buka laundry kiloan di -6.198626, 106.806155, boleh?">Laundry di Petamburan</button>
+      <button class="chip" data-q="Boleh buka hotel di -6.198626, 106.806155?">Hotel di zona perumahan</button>
+      <button class="chip" data-q="Mau buka kedai kopi di -6.202741, 106.801967">Kedai kopi di zona perdagangan</button>
+      <button class="chip" data-q="Bengkel motor di Jl. Petamburan V, Jakarta">Bengkel (pakai alamat)</button>
+    </div>
+    <div class="row">
+      <button class="primary" id="kirim">Cek sekarang</button>
+      <button class="ghost" id="lokasiku" type="button">📍 Pakai lokasi saya</button>
+      <span class="hint">Alamat, koordinat, atau link Google Maps.</span>
+    </div>
+    <div class="loading" id="loading">⏳ Agent sedang mengecek zona, izin, dan peta… <span id="timer">0</span> detik</div>
+  </div>
+
+  <section id="hasil">
+    <div class="grid">
+      <div>
+        <div class="answer" id="jawaban"></div>
+        <div class="row no-print" style="margin-top:12px">
+          <button class="ghost" onclick="window.print()">⬇️ Unduh ringkasan (PDF)</button>
+          <span class="hint" id="durasi"></span>
+        </div>
+      </div>
+      <div><iframe id="peta" title="Peta zona hasil pengecekan" hidden></iframe></div>
+    </div>
+  </section>
+
+  <div class="steps no-print">
+    <div class="step"><b>1. Cek zona</b>Lokasi dicocokkan dengan peta subzona RDTR resmi (data ATR/BPN).</div>
+    <div class="step"><b>2. Cek izin</b>Status diambil dari tabel ITBX Pergub DKI 31/2022, bukan ditebak AI.</div>
+    <div class="step"><b>3. Alternatif + peta</b>Jika dilarang, ditunjukkan zona terdekat yang mengizinkan.</div>
+  </div>
+</div></main>
+<footer><div class="wrap">
+  Hasil ini gambaran awal, bukan keputusan KKPR resmi. Keputusan resmi ada di OSS dan DPMPTSP.
+  Cakupan prototipe: Kota Jakarta Pusat. Dibuat dengan IBM Langflow + IBM Bob · Hackathon Hacktiv8 × IBM SkillsBuild 2026.
+</div></footer>
+<script>
+const $=s=>document.querySelector(s);
+let sid='web-'+Date.now(), tick;
+document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{$('#pesan').value=c.dataset.q;$('#pesan').focus()});
+$('#lokasiku').onclick=()=>{
+  if(!navigator.geolocation){alert('Browser tidak mendukung lokasi.');return}
+  navigator.geolocation.getCurrentPosition(p=>{
+    const t=`${p.coords.latitude.toFixed(6)}, ${p.coords.longitude.toFixed(6)}`;
+    const v=$('#pesan').value.trim();
+    $('#pesan').value = v ? v+' di '+t : 'Saya mau buka ... di '+t;
+  },()=>alert('Izin lokasi ditolak. Tulis alamat atau koordinat secara manual.'));
+};
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function render(md){
+  let h=esc(md);
+  h=h.replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  h=h.replace(/(^|[\s(])(https?:\/\/[^\s<)]+)/g,'$1<a href="$2" target="_blank" rel="noopener">$2</a>');
+  h=h.replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/^#{1,6}\s*(.*)$/gm,'<b>$1</b>');
+  return h.replace(/\n/g,'<br>');
+}
+function badge(t){
+  const m=t.match(/Status\W*[:：]?\s*\**\s*([ITBX])\b/);
+  if(!m) return '';
+  const k=m[1], map={I:['s-ok','I · Diizinkan'],T:['s-warn','T · Terbatas'],B:['s-warn','B · Bersyarat'],X:['s-no','X · Dilarang']};
+  return `<span class="status ${map[k][0]}">${map[k][1]}</span><br>`;
+}
+function mapUrl(t){
+  const m=t.match(/(https?:\/\/[^\s)]+)?\/peta\?[^\s)<]+/);
+  if(m) return m[0].replace(/^https?:\/\/[^/]+/,'');
+  return null;
+}
+async function kirim(){
+  const pesan=$('#pesan').value.trim(); if(!pesan) return;
+  $('#kirim').disabled=true; $('#loading').style.display='block'; let s=0; $('#timer').textContent=0;
+  tick=setInterval(()=>$('#timer').textContent=++s,1000);
+  try{
+    const r=await fetch('/api/cek',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pesan,session_id:sid})});
+    const d=await r.json();
+    const t=d.jawaban||d.error||'Tidak ada jawaban.';
+    $('#jawaban').innerHTML=badge(t)+render(t);
+    $('#durasi').textContent=d.detik?`Selesai dalam ${d.detik} detik`:'';
+    const u=mapUrl(t), f=$('#peta');
+    if(u){f.src=u;f.hidden=false}else{f.hidden=true}
+    $('#hasil').style.display='block'; $('#hasil').scrollIntoView({behavior:'smooth'});
+  }catch(e){alert('Gagal menghubungi server: '+e)}
+  finally{clearInterval(tick);$('#kirim').disabled=false;$('#loading').style.display='none'}
+}
+$('#kirim').onclick=kirim;
+$('#pesan').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.ctrlKey||e.metaKey))kirim()});
+</script>
+</body>
+</html>
